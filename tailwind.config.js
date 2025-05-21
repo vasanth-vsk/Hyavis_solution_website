@@ -1,0 +1,117 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          50: '#f0f5fe',
+          100: '#dae8fd',
+          200: '#bbd3fa',
+          300: '#8bb8f7',
+          400: '#5591f2',
+          500: '#306cea',
+          600: '#1e4fde',
+          700: '#1e3a8a', // Main primary
+          800: '#1a2f6e',
+          900: '#192b59',
+        },
+        secondary: {
+          50: '#eefbfa',
+          100: '#d5f3f0',
+          200: '#b0e5e1',
+          300: '#7cd0cc',
+          400: '#43afa9',
+          500: '#2a948e',
+          600: '#0f766e', // Main secondary
+          700: '#105e57',
+          800: '#124a45',
+          900: '#133d39',
+        },
+        accent: {
+          50: '#fefceb',
+          100: '#fef7cc',
+          200: '#fcec9c',
+          300: '#fade5f',
+          400: '#f7ca2e',
+          500: '#edb514',
+          600: '#ca8a04', // Main accent
+          700: '#a16207',
+          800: '#85510e',
+          900: '#713f12',
+        },
+        success: {
+          50: '#effef4',
+          100: '#dbfce5',
+          200: '#b9f7ce',
+          300: '#85eea8',
+          400: '#49da77',
+          500: '#22c55e',
+          600: '#15a34a',
+          700: '#15803d',
+          800: '#166534',
+          900: '#14532d',
+        },
+        warning: {
+          50: '#fff8ed',
+          100: '#ffefd5',
+          200: '#fddcab',
+          300: '#fbc174',
+          400: '#f79c3f',
+          500: '#f97316',
+          600: '#e6500c',
+          700: '#c2410c',
+          800: '#9a3412',
+          900: '#7c2d12',
+        },
+        error: {
+          50: '#fef2f2',
+          100: '#fde2e2',
+          200: '#fccaca',
+          300: '#f99f9f',
+          400: '#f47e7e',
+          500: '#ef4444',
+          600: '#dc2626',
+          700: '#b91c1c',
+          800: '#991b1b',
+          900: '#7f1d1d',
+        },
+      },
+      fontFamily: {
+        sans: [
+          '"Inter var"',
+          'Inter',
+          'system-ui',
+          '-apple-system',
+          'BlinkMacSystemFont',
+          '"Segoe UI"',
+          'Roboto',
+          '"Helvetica Neue"',
+          'Arial',
+          'sans-serif',
+        ],
+      },
+      animation: {
+        'fade-in': 'fadeIn 0.5s ease-in-out',
+        'slide-up': 'slideUp 0.5s ease-out',
+        'slide-down': 'slideDown 0.3s ease-out',
+        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        slideUp: {
+          '0%': { transform: 'translateY(20px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        slideDown: {
+          '0%': { transform: 'translateY(-20px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+      },
+    },
+  },
+  plugins: [],
+};
